@@ -29,6 +29,8 @@ class Keep {
 
 }
 
+
 const test = new Keep("Note_test", "Meeting @ 2 pm", 1);
 
-test.writeNote("Note_test", "Meeting @ 2 pm", 1);
+test.writeNote({ title: "Note_test", text: "Meeting @ 3 pm", id: 2 });
+test.readNote();
