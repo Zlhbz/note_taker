@@ -16,7 +16,7 @@ function get_data(server) {
     });
 
     server.post("/api/notes", function (req, res) {
-        console.log(req.body);
+        console.log("req.body --> " + req.body);
         res.json({ "test": "working" })
 
     });
